@@ -73,7 +73,7 @@ def plot():
         i = i + 1
 
 
-def simulate(controller='lqr', qp_init=181, runtime=15, ani=False, plot=True): 
+def simulate(controller='lqr', qp_init=181, runtime=15, ani=True, plot=False): 
     '''simulates the reaction wheel pendulum system'''
     state = np.array([[qp_init], [0], [0], [0]]) 
     pend = Pendulum(state)
